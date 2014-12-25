@@ -83,6 +83,8 @@ set scrolloff=3 "start scrolling near top or bottom
 set backspace=indent,eol,start "can backspace anything, INS mode
 set history=1000 "lotsa command line history
 
+" use vimwiki as folder in Dropbox
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
 " folding in vimwiki:
 let g:vimwiki_folding='expr'
 
@@ -154,4 +156,4 @@ inoremap jj <ESC>
 " nnoremap <tab> %
 " vnoremap <tab> %
 " refresh vimrc with leader rr:
-map <leader>rr :source ~\vimfiles\_vimrc
+map <leader>rr :source ~\vimfiles\vimrc
