@@ -2,7 +2,6 @@ set nocompatible "use vim not vi
 " plugins: start vundle section
 " Set up filetype for loading plugins wtih vundle:
 filetype off
-filetype plugin on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~\vimfiles\bundle\Vundle.vim\
@@ -83,6 +82,12 @@ set scrolloff=3 "start scrolling near top or bottom
 set backspace=indent,eol,start "can backspace anything, INS mode
 set history=1000 "lotsa command line history
 
+"ultiSnips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" vimwiki settings
 " use vimwiki as folder in Dropbox
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
 " folding in vimwiki:
