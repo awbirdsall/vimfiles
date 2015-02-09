@@ -102,7 +102,7 @@ set hidden " background buffers persist
 set undofile "make undofile---maybe should have some sort of version check?
 
 " Tab format - replace with spaces, 4 space indents
-set autoindent
+set autoindent " use indent from previous line
 set cindent " supposed to be better for python comments than smartindent
 set smarttab
 set tabstop=4
@@ -162,3 +162,4 @@ inoremap jj <ESC>
 " vnoremap <tab> %
 " refresh vimrc with leader rr:
 map <leader>rr :source ~\vimfiles\vimrc
+map <leader>re :edit ~\vimfiles\vimrc
