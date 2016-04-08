@@ -4,9 +4,9 @@ set nocompatible "use vim not vi
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~\vimfiles\bundle\Vundle.vim\
-let path='~\vimfiles\bundle'
-call vundle#begin(path)
+set rtp+=/n/home03/abirdsall/vimfiles/bundle/Vundle.vim/
+"let path='~/vimfiles/bundle'
+call vundle#begin()
 
 " let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
