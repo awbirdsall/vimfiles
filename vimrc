@@ -54,8 +54,6 @@ Plugin 'tpope/vim-repeat'
 
 " enhance netrw
 Plugin 'tpope/vim-vinegar'
-" snippets
-Plugin 'SirVer/ultisnips'
 
 " Make wiki-type files in vim
 Plugin 'vimwiki'
@@ -81,11 +79,6 @@ set modelines=0 " no modelines
 set scrolloff=3 "start scrolling near top or bottom
 set backspace=indent,eol,start "can backspace anything, INS mode
 set history=1000 "lotsa command line history
-
-"ultiSnips settings
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " vimwiki settings
 " use vimwiki as folder in Dropbox
