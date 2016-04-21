@@ -92,7 +92,6 @@ let g:vimroom_sidebar_height=0
 set autoread " autoupdate files edited outside vim
 "au FocusLost * :wa "autosave on lost focus
 set hidden " background buffers persist
-set undofile "make undofile---maybe should have some sort of version check?
 
 " Tab format - replace with spaces, 4 space indents
 set autoindent " use indent from previous line
@@ -104,14 +103,12 @@ set softtabstop=4
 set expandtab
 
 " Appearance
-set colorcolumn=+1 " relative to textwidth. Not used with textwidth=0.
 set wrap "wrap lines longer than window width in display
 set showmatch "blink on matching bracket
 " set visualbell "flash display when compy would beep
 set cursorline "highlight entire line with cursor
 set ttyfast " more characters for redraws
 set ruler " not sure if this matters with airline
-set relativenumber "ruler numbers relative to cursor, for j, etc.
 set laststatus=2 "always show status line for last window
 set showmode "show mode at bottom left
 set showcmd "show partial command at bottom right
@@ -120,7 +117,6 @@ set showcmd "show partial command at bottom right
 set wildmenu "enhanced command line completion
 set wildmode=longest:full "complete longest common string, start wildmenu
 set wildignore+=*.pyc " ignore compiled .pyc files
-set wildignorecase "case-insensitive when completing file names
 
 " Searching
  "default to very magic search---assume all special chars:
