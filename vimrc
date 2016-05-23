@@ -59,6 +59,10 @@ Plugin 'SirVer/ultisnips'
 
 " Make wiki-type files in vim
 Plugin 'vimwiki'
+
+" motion plugin with s and c
+Plugin 'justinmk/vim-sneak'
+
 " currently unused
 " two-way ipython and vim interactions
 " Plugin 'ivanov/vim-ipython'
