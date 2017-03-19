@@ -22,8 +22,6 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 " Display
 " distraction-free mode
 Plugin 'mikewest/vimroom'
-" Pretty up status bar
-Plugin 'bling/vim-airline'
 
 " Themes
 " solarized color scheme
@@ -36,12 +34,6 @@ Plugin 'reedes/vim-colors-pencil'
 " Run Git commands within vim, integrate buffer
 Plugin 'vim-scripts/fugitive.vim'
 
-" extend search
-" fuzzy finding
-Plugin 'kien/ctrlp.vim'
-" search with ack
-Plugin 'mileszs/ack.vim'
-
 " Extend vim commands
 " Add some new verbs for swapping lines, etc.
 Plugin 'tpope/vim-unimpaired'
@@ -52,22 +44,31 @@ Plugin 'tpope/vim-commentary'
 " can use . to repeat plugin mappings
 Plugin 'tpope/vim-repeat'
 
-" enhance netrw
-Plugin 'tpope/vim-vinegar'
-" snippets
-Plugin 'SirVer/ultisnips'
-
 " Make wiki-type files in vim
 Plugin 'vimwiki'
 
 " motion plugin with s and c
 Plugin 'justinmk/vim-sneak'
 
+" tabs and tables
+Plugin 'godlygeek/tabular'
+Plugin 'dhruvasagar/vim-table-mode'
+
 " currently unused
+" snippets
+" Plugin 'SirVer/ultisnips'
 " two-way ipython and vim interactions
 " Plugin 'ivanov/vim-ipython'
 " latex suite
 " Plugin 'LaTeX-Box-Team/LaTeX-Box'
+" enhance netrw
+" Plugin 'tpope/vim-vinegar'
+" fuzzy finding
+" Plugin 'kien/ctrlp.vim'
+" search with ack
+" Plugin 'mileszs/ack.vim'
+" Pretty up status bar
+" Plugin 'bling/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -167,3 +168,7 @@ inoremap jj <ESC>
 " refresh vimrc with leader rr:
 map <leader>rr :source ~\vimfiles\vimrc
 map <leader>re :edit ~\vimfiles\vimrc
+
+" macros
+" add markdown link to visual mode selection:
+let @l = 'S]%a(*)'
