@@ -106,6 +106,9 @@ set autoread " autoupdate files edited outside vim
 set hidden " background buffers persist
 set undofile "make undofile---maybe should have some sort of version check?
 
+" Recognize *.md as Markdown by default (not modula2)
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
 " Tab format - replace with spaces, 4 space indents
 set autoindent " use indent from previous line
 set cindent " supposed to be better for python comments than smartindent
@@ -114,6 +117,10 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+" Citations dictionary
+set dictionary+=$HOME/Documents/research/odyssey/droplet/writing/pegpaper/bibkeys.txt
+set complete+=k
 
 " Appearance
 set colorcolumn=+1 " relative to textwidth. Not used with textwidth=0.
@@ -149,9 +156,8 @@ nnoremap <leader><space> :noh<cr>
 " Text formatting
 set textwidth=79 "maximum true width of text in buffer
 " Formatting done by 'gq':
-set formatoptions+=qrn1
+set formatoptions+=qn1
 " q: gq can format comments
-" r: INS Enter inserts current comment leader
 " n: recognize numbered list and autoindent
 " 1: break line before one-letter word instead after, if possible
 " set formatoptions-=tc
